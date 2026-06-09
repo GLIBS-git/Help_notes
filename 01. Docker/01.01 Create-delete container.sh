@@ -10,7 +10,8 @@ docker rm 050037515ee2
 # Stop running container and delete
 docker rm -f 050037515ee2
 
-
+# Container configuration
+docker inspect 057b96ea64eb
 
 
 
