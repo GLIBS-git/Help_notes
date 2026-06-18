@@ -29,6 +29,18 @@ curl -v -X GET "http://localhost:5050/api/v1/ping/Тест!" \
 curl -i --connect-timeout 5 "http://192.168.0.157:5050/api/v1"
 curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1"
 
+curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
+        --url-query "a=Тест 0&Тест 1" \
+        --url-query "b=Тест 2" \
+        --url-query "c=Тест 3,Тест 4" \
+        -H "Accept: application/json"
+
+curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
+        --url-query "a=Тест 0&Тест 1" \
+        --url-query "b=Тест 2" \
+        --url-query "c=Тест 3,Тест 4" \
+        --url-query "a=Тест 5&Тест 6" \
+        -H "Accept: application/json"
 
 
 
