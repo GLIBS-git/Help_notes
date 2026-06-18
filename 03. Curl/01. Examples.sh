@@ -35,6 +35,7 @@ curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
         --url-query "c=Тест 3,Тест 4" \
         -H "Accept: application/json"
 
+# Linux style
 curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
         --url-query "a=Тест 0&Тест 1" \
         --url-query "b=Тест 2" \
@@ -42,6 +43,13 @@ curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
         --url-query "a=Тест 5&Тест 6" \
         -H "Accept: application/json"
 
+# Windows style
+curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" ^
+        --url-query "a=Тест 0&Тест 1" ^
+        --url-query "b=Тест 2" ^
+        --url-query "c=Тест 3,Тест 4" ^
+        --url-query "a=Тест 5&Тест 6" ^
+        -H "Accept: application/json"
 
 
 
