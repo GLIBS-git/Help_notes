@@ -27,7 +27,10 @@ curl -v -X GET "http://localhost:5050/api/v1/ping/Тест!" \
 
 # -v is better than -i
 curl -i --connect-timeout 5 "http://192.168.0.157:5050/api/v1"
-curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1"
+curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1" \
+        --url-query "delay=5" \
+        --url-query "output=json"
+        --url-query "output=text"
 
 curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
         --url-query "a=Тест 0&Тест 1" \
