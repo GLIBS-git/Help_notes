@@ -33,14 +33,14 @@ curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/ping" \
         --url-query "output=json"
         --url-query "output=text"
 
-curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
+curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
         --url-query "a=Тест 0&Тест 1" \
         --url-query "b=Тест 2" \
         --url-query "c=Тест 3,Тест 4" \
         -H "Accept: application/json"
 
 # Linux style
-curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" \
+curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
         --url-query "a=Тест 0&Тест 1" \
         --url-query "b=Тест 2" \
         --url-query "c=Тест 3,Тест 4" \
