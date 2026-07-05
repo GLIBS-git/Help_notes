@@ -64,9 +64,10 @@ curl -v --connect-timeout 5 "http://localhost:5050/api/v1/test" ^
         --url-query "a=Тест 5&Тест 6" ^
         -H "Accept: application/json"
 
-curl -v -o responce.json --connect-timeout 5 "http://bp-aanikin-n:5252/run/replace" ^
-        -H "Content-Type: application/json" ^
-        -H "Accept: application/json" ^
-        -d @body.json
+
+
+
+
+
 
 
