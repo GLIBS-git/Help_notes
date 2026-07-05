@@ -27,20 +27,23 @@ curl -v -X GET "http://localhost:5050/api/v1/ping/Тест!" \
 
 # -v is better than -i
 curl -i --connect-timeout 5 "http://192.168.0.157:5050/api/v1"
-curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1" \
+curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1"
+
+curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1"
+curl -v -o appl-services.json --connect-timeout 5 "http://192.168.0.157:5050/api/v1/debug/appl-services"
+curl -v -X POST --connect-timeout 5 "http://192.168.0.157:5050/api/v1/exit"
 curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/ping" \
         --url-query "delay=5" \
         --url-query "output=json"
         --url-query "output=text"
-
+curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/pwd"
 curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
         --url-query "a=Тест 0&Тест 1" \
         --url-query "b=Тест 2" \
         --url-query "c=Тест 3,Тест 4" \
         -H "Accept: application/json"
 
-curl -v -X POST --connect-timeout 5 "http://192.168.0.157:5050/api/v1/exit"
-
+# test
 curl -v -X POST --connect-timeout 5 "http://192.168.0.157:5050/api/v1/exit" \
         -d @body.json
 
