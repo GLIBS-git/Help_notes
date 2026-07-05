@@ -39,6 +39,12 @@ curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
         --url-query "c=Тест 3,Тест 4" \
         -H "Accept: application/json"
 
+curl -v -X POST --connect-timeout 5 "http://192.168.0.157:5050/api/v1/exit"
+
+curl -v -X POST --connect-timeout 5 "http://192.168.0.157:5050/api/v1/exit" \
+        -d @body.json
+
+
 # Linux style
 curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
         --url-query "a=Тест 0&Тест 1" \
