@@ -47,6 +47,18 @@ curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
 curl -v -X POST --connect-timeout 5 "http://192.168.0.157:5050/api/v1/exit" \
         -d @body.json
 
+curl -v -o ping.json --connect-timeout 5 "http://localhost:5050/api/v1/ping-2" ^
+        --url-query "output=json"
+curl -v --connect-timeout 5 "http://localhost:5050/api/v1/ping-2" ^
+        --url-query "output=text"
+curl -v --connect-timeout 5 "http://localhost:5050/api/v1/ping-2" ^
+        --url-query "output=test"
+curl -v --connect-timeout 5 "http://localhost:5050/api/v1/ping-2" ^
+        --url-query "output=json" ^
+        --url-query "output=text"
+curl -v -X POST --connect-timeout 5 "http://localhost:5050/api/v1/exit"
+
+
 
 # Linux style
 curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
