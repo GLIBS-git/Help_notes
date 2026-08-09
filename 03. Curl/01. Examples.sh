@@ -46,6 +46,7 @@ curl -v --connect-timeout 5 "http://192.168.0.157:5050/api/v1/test" \
 # test
 curl -v -X POST --connect-timeout 5 "http://192.168.0.157:5050/api/v1/exit" \
         -d @body.json
+curl -v -X POST --connect-timeout 5 "http://localhost:5050/api/v1/exit"
 
 curl -v -o ping.json --connect-timeout 5 "http://localhost:5050/api/v1/ping-2" ^
         --url-query "output=json"
