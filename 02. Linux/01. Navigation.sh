@@ -2,7 +2,7 @@
 ls
 # List of directory, display hidden files
 ls -a
-# Also worksfor listing directory
+# Also works for listing directory
 dir
 dir -a
 # Display current path
