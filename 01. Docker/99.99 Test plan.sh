@@ -12,9 +12,6 @@ docker run -v /path/on/host:/path/in/container my-hello-world:1.0
 # Create a volume explicitly
 docker volume create my-data-volume
 
-# List volumes
-docker volume ls
-
 # Inspect a volume
 docker volume inspect my-data-volume
 
