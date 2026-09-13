@@ -1,7 +1,7 @@
 # Create a volume explicitly
-docker volume create my-data-volume
+docker volume create  <volume_name>
 
 # Remove a volume
-docker volume rm my-data-volume
+docker volume rm  <volume_name>
 
 
