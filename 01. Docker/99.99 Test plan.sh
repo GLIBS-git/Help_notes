@@ -1,6 +1,3 @@
-# Read past logs
-docker logs <container_id>
-
 # Follows the container's output in real-time
 docker logs -f <container_id_or_name>
 
