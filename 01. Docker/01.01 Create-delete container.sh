@@ -1,7 +1,7 @@
 # Test container
 docker run hello-world
 
-# Create container
+# Create container: 8080 - Docker host's port, 80 - container's port
 docker run -d -p 8080:80 nginx
 
 # Delete container
