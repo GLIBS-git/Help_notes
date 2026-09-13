@@ -4,7 +4,7 @@ docker ps
 docker ps -a
 
 # Displays container's configuration
-docker inspect 057b96ea64eb
+docker inspect <container_id>
 
 
 
