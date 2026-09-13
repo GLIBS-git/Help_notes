@@ -5,10 +5,10 @@ docker run hello-world
 docker run -d -p 8080:80 nginx
 
 # Delete container
-docker rm 050037515ee2
+docker rm <container_id>
 
 # Stop running container and delete
-docker rm -f 050037515ee2
+docker rm -f <container_id>
 
 
 
