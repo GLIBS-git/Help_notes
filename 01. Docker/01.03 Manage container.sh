@@ -8,6 +8,10 @@ exit
 # Read past logs (works for stopped container)
 docker logs <container_id_or_name>
 
+# Follows the container's output in real-time (container must be running)
+docker logs -f <container_id_or_name>
+# ^C to exit
+
 
 
 
