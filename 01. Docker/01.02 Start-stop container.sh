@@ -1,6 +1,6 @@
 # Start container
-docker start <container_id>
+docker start <container_id_or_name>
 
 # Stop container
-docker stop <container_id>
+docker stop <container_id_or_name>
 
