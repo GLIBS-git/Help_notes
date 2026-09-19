@@ -9,16 +9,6 @@ docker run -v /path/on/host:/path/in/container my-hello-world:1.0
 
 
 
-# Create a volume explicitly
-docker volume create my-data-volume
-
-# Inspect a volume
-docker volume inspect my-data-volume
-
-# Remove a volume
-docker volume rm my-data-volume
-
-
 # Create volume
 docker volume create app-data
 
