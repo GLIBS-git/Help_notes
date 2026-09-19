@@ -1,7 +1,3 @@
-# Follows the container's output in real-time
-docker logs -f <container_id_or_name>
-# ^C to exit
-
 # Attaches terminal directly to the container's stdin/stdout/stderr
 docker attach <container_id_or_name>
 
