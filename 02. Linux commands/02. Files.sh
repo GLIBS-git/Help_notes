@@ -1,8 +1,8 @@
-# Output the entire file to the console
-cat file.txt
+# Output the entire Test.txt file to the console
+cat Test.txt
 
-# Output the file to the console by pages (space - next page, q - quit)
-less file.txt
+# Output the file Test.txt to the console by pages (space - next page, q - quit)
+less Test.txt
 
 # Creates a file if not existing or updates file modification date-time
 touch Test-1.txt
@@ -11,6 +11,8 @@ touch Test-1.txt
 nano Test.txt
 # To save changes: ^O + Enter + ^X
 
+# Executes a file Program.sh (run a program)
+./Program.sh
 
 
 
