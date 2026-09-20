@@ -19,10 +19,15 @@ docker run -d -p <port-at-host>:<port-in-container> <image>
 # Example: 8080 -- Docker host's port; 80 -- container's port
 docker run -d -p 8080:80 nginx
 
-# -v -- run container with mount volume
+# -v -- run container with mount
 docker run -v </path/on/host>:</path/in/container> <image>
 # Example
 docker run -id -v ~/Docker/mount:/app/data --name u3 ubuntu bash
+
+# -v -- run container with volume 
+docker run -v <volume-name>:</path/in/container> <image>
+# Example: run container with volume "volume-1" (volume must be already created)
+docker run -id -v volume-1:/app/data --name u4 ubuntu bash
 
 # Rename container
 docker rename <old-name> <new-name>
