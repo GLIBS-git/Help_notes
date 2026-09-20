@@ -1,6 +1,8 @@
 # Run terminal session in container (container must be running)
 docker exec -it <container_id_or_name> /bin/bash
 docker exec -it <container_id_or_name> /bin/sh
+# ^P^Q to detach terminal without stopping container
+# ^C stops container
 
 # Stop terminal session in container
 exit
@@ -14,7 +16,8 @@ docker logs -f <container_id_or_name>
 
 # Attaches terminal directly to the container's stdin/stdout/stderr
 docker attach <container_id_or_name>
-# ^P^Q to detach terminal
+# ^P^Q to detach terminal without stopping container
+# ^C stops container
 
 
 
