@@ -2,7 +2,7 @@
 docker images
 
 # Delete local image
-docker rmi <image-id-or-nema>
+docker rmi <image-id-or-name>
 
 
 
