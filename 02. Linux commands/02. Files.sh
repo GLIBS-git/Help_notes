@@ -7,6 +7,10 @@ less file.txt
 # Creates a file if not existing or updates file modification date-time
 touch Test-1.txt
 
+# Runs a text editor for editing or viewing the file
+nano Test.txt
+# To save changes: ^O + Enter + ^X
+
 
 
 
