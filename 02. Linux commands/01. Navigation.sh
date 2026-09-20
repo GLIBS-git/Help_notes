@@ -9,6 +9,10 @@ dir -a
 # Display current path
 pwd
 
+# Change directory to /Tmp
+cd Tmp
+# Move one directory up
+cd ..
 
 
 
