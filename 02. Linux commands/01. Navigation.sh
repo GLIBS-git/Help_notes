@@ -5,8 +5,20 @@ ls -a
 # Also works for listing directory
 dir
 dir -a
+
 # Display current path
 pwd
+
+
+
+
+
+
+
+
+
+
+
 
 
 
