@@ -1,8 +1,10 @@
 # Run terminal session in container (container must be running)
 docker exec -it <container_id_or_name> /bin/bash
 docker exec -it <container_id_or_name> /bin/sh
-# ^P^Q to detach terminal without stopping container
-# ^C stops container
+# "exit" exits from terminal, container not stopped
+# ^P^Q also exits from terminal, container not stopped
+# Also works:
+docker exec -it <container_id_or_name> bash
 
 # Stop terminal session in container
 exit
