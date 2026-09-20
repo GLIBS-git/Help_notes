@@ -11,6 +11,9 @@ docker run -d -p 8080:80 nginx
 ## -n -- set a name to the container
 #docker run -n <set-container-name> -d ubuntu
 
+# Rename container
+docker rename <old-name> <new-name>
+
 # Delete container
 docker rm <container_id_or_name>
 
