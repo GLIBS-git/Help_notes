@@ -1,13 +1,11 @@
 # Run terminal session in container (container must be running)
 docker exec -it <container_id_or_name> /bin/bash
 docker exec -it <container_id_or_name> /bin/sh
-# "exit" exits from terminal, container not stopped
+# Stop terminal session in container, container not stopped
+exit
 # ^P^Q also exits from terminal, container not stopped
 # Also works:
 docker exec -it <container_id_or_name> bash
-
-# Stop terminal session in container
-exit
 
 # Read past logs (works for stopped container)
 docker logs <container_id_or_name>
