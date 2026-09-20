@@ -8,6 +8,9 @@ docker run hello-world
 # -d -- runs detached (opposite to hello-world with output)
 docker run -d -p 8080:80 nginx
 
+## -n -- set a name to the container
+#docker run -n <set-container-name> -d ubuntu
+
 # Delete container
 docker rm <container_id_or_name>
 
