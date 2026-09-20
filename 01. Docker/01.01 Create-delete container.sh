@@ -1,15 +1,17 @@
-# Create test container: (Puts output to console; stops right after running) 
+# Create a test container: (Puts output to console; stops right after running) 
 docker run hello-world
 
-# Create container
+# Create the container
 # -p -- publishes container port to the host: 
 #       - 8080 -- Docker host's port
 #       - 80 -- container's port
 # -d -- runs detached (opposite to hello-world with output)
 docker run -d -p 8080:80 nginx
 
-## -n -- set a name to the container
-#docker run -n <set-container-name> -d ubuntu
+# --name -- set a name to the container
+docker run --name <set-container-name> -d ubuntu
+# Example of setting name
+docker run --name hw-test-name hello-world
 
 # Rename container
 docker rename <old-name> <new-name>
