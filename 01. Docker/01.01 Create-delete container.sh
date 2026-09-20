@@ -9,7 +9,7 @@ docker run hello-world
 docker run -d -p 8080:80 nginx
 
 # --name -- set a name to the container
-docker run --name <set-container-name> -d ubuntu
+docker run --name <set-container-name> -d <image>
 # Example of setting name
 docker run --name hw-test-name hello-world
 
