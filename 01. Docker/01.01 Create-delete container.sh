@@ -22,7 +22,7 @@ docker run -d -p 8080:80 nginx
 # -v -- run container with mount volume
 docker run -v </path/on/host>:</path/in/container> <image>
 # Example
-docker run -id -v ~/Docker/U1:/app/data --name u3 ubuntu bash
+docker run -id -v ~/Docker/mount:/app/data --name u3 ubuntu bash
 
 # Rename container
 docker rename <old-name> <new-name>
