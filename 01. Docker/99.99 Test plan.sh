@@ -15,7 +15,7 @@ docker run -v app-data:/app/data my-app:1.0
 # Data persists even after container stops
 docker run -v app-data:/app/data my-app:1.0  # Same data!
 
-
+docker run -it ubuntu bash
 
 
 
