@@ -1,13 +1,12 @@
-# Create a test container: (Puts output to console; stops right after running) 
-docker run <image>
-# Example of creating the "Hello world" container 
+# Example of creating the "Hello world" container: (Puts output to console; stops right after running)
 docker run hello-world
 
-# -d -- runs container detached (opposite to hello-world with output)
-docker run -d <image>
-# Example of creating a detached container
-docker run -d ubuntu
+# Example of creating Ubuntu container
+# -t -- opens terminal
+docker run -it --name u1 ubuntu bash
+# ^C to exit terminal. Stops container. Can be started by "start" command.
 
+# -d -- runs container detached (opposite to hello-world with output)
 # -p -- publishes container port to the host: 
 docker run -d -p <port-at-host>:<port-in-container> <image>
 # Example: 8080 -- Docker host's port; 80 -- container's port
@@ -21,8 +20,8 @@ docker run --name hw-test-name hello-world
 # -v -- run container with mount volume
 docker run -v </path/on/host>:</path/in/container> <image>
 # Example
-docker run -v ~/Docker/U1:/app/data --name U1 ubuntu
-
+docker run -d -v ~/Docker/U1:/app/data --name u1 ubuntu
+docker run -it --name u1 ubuntu bash
 
 # Rename container
 docker rename <old-name> <new-name>
