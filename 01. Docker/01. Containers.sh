@@ -6,7 +6,7 @@ docker ps -a
 # Displays container's configuration
 docker inspect <container_id_or_name>
 
-# Cleans all that is not necessary (containers, images, ports)
+# Deletes & cleans all that is not necessary (containers, images, ports). Asks confirmation.
 docker system prune
 
 
