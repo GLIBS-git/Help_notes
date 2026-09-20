@@ -1,5 +1,6 @@
 # Attaches terminal directly to the container's stdin/stdout/stderr
 docker attach <container_id_or_name>
+# ^P^Q to detach terminal
 
 # Run container with mount volume
 docker run -v /path/on/host:/path/in/container my-hello-world:1.0
