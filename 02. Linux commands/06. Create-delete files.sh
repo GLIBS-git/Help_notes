@@ -9,6 +9,9 @@ rm Test.txt
 # Delete directory XXX
 rm -r XXX
 
+# Copy file Text-1.txt to file Text-2.txt
+cp Text-1.txt Text-2.txt
+# -r -- save directory structure (when copying directories)
 
 
 
