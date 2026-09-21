@@ -1,7 +1,7 @@
 # Example of creating the "Hello world" container: (Puts output to console; stops right after running)
 docker run hello-world
 
-# --name -- set a name to the container
+# --name -- set a name to the container. If not set, Docker assings funny names itself.
 docker run --name <set-container-name> -d <image>
 # Example of setting name
 docker run --name hw-test-name hello-world
