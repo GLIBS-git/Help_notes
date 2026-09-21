@@ -29,14 +29,6 @@ docker run -v <volume-name>:</path/in/container> <image>
 # Example: run container with volume "volume-1" (volume must be already created)
 docker run -id -v volume-1:/app/data --name u4 ubuntu bash
 
-# Rename container
-docker rename <old-name> <new-name>
-
-# Delete container
-docker rm <container_id_or_name>
-
-# Stop running container and delete
-docker rm -f <container_id_or_name>
 
 
 
