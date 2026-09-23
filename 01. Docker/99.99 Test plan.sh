@@ -1,4 +1,4 @@
-docker run -rm --name hw-test-name hello-world
+docker run --rm --name hw-test hello-world
 
 docker search java
 
