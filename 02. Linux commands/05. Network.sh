@@ -6,3 +6,12 @@ ping ya.ru
 ping -4 ya.ru
 # Ping over IPv6
 ping -6 ya.ru
+
+# Show ip address
+ip addr show
+
+# Network interfaces
+ifconfig
+
+
+
