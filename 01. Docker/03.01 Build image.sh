@@ -1,1 +1,32 @@
+# Build image
+docker build -t my-hello-world:1.0 .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
