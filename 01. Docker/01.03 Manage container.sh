@@ -19,6 +19,14 @@ docker attach <container_id_or_name>
 # ^P^Q to detach terminal without stopping container
 # ^C stops container
 
+# Port mapping for a container
+docker port <container_id_or_name>
+# Example
+docker port csws
+
+
+
+
 
 
 
