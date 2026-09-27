@@ -20,6 +20,8 @@ docker run -id --name u2 ubuntu bash
 docker run -d -p <port-at-host>:<port-in-container> <image>
 # Example: 8080 -- Docker host's port; 80 -- container's port
 docker run -d -p 8080:80 nginx
+# 0.0.0.0 makes container available on all network interfaces, not only on localhost.
+docker run -d -p 0.0.0.0:8080:80 nginx
 
 # -v -- run container with mount
 docker run -v </path/on/host>:</path/in/container> <image>
